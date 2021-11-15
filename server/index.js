@@ -13,6 +13,10 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
+app.get('/', (req,res) => {
+  res.send('Hello to memories API');
+});
+
 // const CONNECTION_URL =
 //   "mongodb+srv://brunoJorquera:brunoJorquera123@cluster0.j1elg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
